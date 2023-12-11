@@ -1,5 +1,23 @@
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+}
+
 .App {
   text-align: center;
+  display: flex;
+  margin-top: 30px;
+  padding-left: 60px;
 }
 
 .App-logo {
@@ -35,4 +53,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.big-text {
+  font-size: large;
+}
+
+.small-text {
+  font-size:smaller;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.Toastify__toast {
+  padding-block: 6px;
+  padding-left: 10px;
+}
+
+.Toastify__toast-container {
+  width: 320px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+.Toastify__toast-icon {
+  width: 25px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.Toastify__toast-body {
+  display: flex;
+  padding-block: 10px;
 }
