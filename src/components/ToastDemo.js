@@ -1,19 +1,20 @@
 import { ToastContainer, toast } from "react-toastify"
 import { options } from "./Chartoptions"
+import 'react-toastify/dist/ReactToastify.css';
 
 const ToastDemo = () => {
 
     const showToastMessage = (messageType, message="This is a sample message") => {
         switch(messageType){
-            case 'error': toast.error(message, {position:'bottom',autoClose:3000,hideProgressBar:false,theme:"light"})
+            case 'error': toast.error(message, {position:'top-right',autoClose:3000, closeOnClick:true, theme:"light"})
                 break;
-            case 'info': toast.info(message, {position:'bottom',autoClose:3000,hideProgressBar:false,theme:"light"})
+            case 'info': toast.info(message, {position:'top-right',autoClose:3000,theme:"light"})
                 break;
-            case 'success': toast.success(message, {position:'bottom',autoClose:3000,hideProgressBar:false,theme:"light"})
+            case 'success': toast.success(message, {position:'top-right',autoClose:3000,theme:"light"})
                 break;
-            case 'warning': toast.warn(message, {position:'bottom',autoClose:3000,hideProgressBar:false,theme:"light"})
+            case 'warning': toast.warn(message, {position:'top-right',autoClose:3000,theme:"light"})
                 break;
-            default: toast(message, {position:'bottom',autoClose:3000,hideProgressBar:false,theme:"light"})
+            default: toast(message, {position:'top-right',autoClose:3000,theme:"light"})
         }
     }
 

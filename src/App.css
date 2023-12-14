@@ -88,13 +88,10 @@
   width: 320px;
   height: 66px;
   margin: 0 auto;
-  background-color: whitesmoke;
 }
 
 .Toastify__toast-icon {
-  width: 25px;
-  padding-bottom: 10px;
-  padding-right: 5px;
+  width: 27px !important;
 }
 
 .Toastify__toast-body {
